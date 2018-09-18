@@ -1,0 +1,426 @@
+/*--------font Size----------*/
+.cs-fs-6{
+    font-size: 0.375em;
+}
+.cs-fs-7{
+    font-size: 0.438em;
+}
+.cs-fs-8{
+    font-size: 0.5em;
+}
+.cs-fs-9{
+    font-size: 0.563em;
+}
+.cs-fs-10{
+    font-size: 0.625em;
+}
+.cs-fs-11{
+    font-size: 0.688em;
+}
+.cs-fs-12{
+    font-size: 0.75em;
+}
+.cs-fs-13{
+    font-size: 0.813em;
+}
+.cs-fs-14 h6{
+    font-size: 0.875em;
+}
+.cs-fs-15{
+    font-size: 0.938em;
+}
+.cs-fs-16 h5{
+    font-size: 1em;
+}
+.cs-fs-17{
+    font-size: 1.063em;
+}
+.cs-fs-18 h4{
+    font-size: 1.125em	;
+}
+.cs-fs-19{
+    font-size: 1.188em;
+}
+.cs-fs-20{
+    font-size: 1.25em;
+}
+.cs-fs-21 h3{
+    font-size: 1.313em;
+}
+.cs-fs-22{
+    font-size: 1.375em;
+}
+.cs-fs-23{
+    font-size: 1.438em;
+}
+.cs-fs-24 h2{
+    font-size: 1.5em;
+}
+.cs-fs-25{
+    font-size: 1.563em;
+}
+.cs-fs-26{
+    font-size: 1.625em;
+}
+.cs-fs-27{
+    font-size: 1.688em;
+}
+.cs-fs-28{
+    font-size: 1.75em;
+}
+.cs-fs-29{
+    font-size: 1.813em;
+}
+.cs-fs-30{
+    font-size: 1.875em;
+}
+.cs-fs-31{
+    font-size: 1.938em;
+}
+.cs-fs-32{
+    font-size: 2em;
+}
+.cs-fs-33{
+    font-size: 2.063em;
+}
+.cs-fs-34{
+    font-size: 2.125em;
+}
+.cs-fs-35{
+    font-size: 2.188em;
+}
+.cs-fs-36 h1{
+    font-size: 2.25em;
+}
+.cs-fs-37{
+    font-size: 2.313em;
+}
+.cs-fs-38{
+    font-size: 2.375em;
+}
+.cs-fs-39{
+    font-size: 2.438em;
+}
+.cs-fs-40{
+    font-size: 2.5em;
+}
+.cs-fs-41{
+    font-size: 2.563em;
+}
+.cs-fs-42{
+    font-size: 2.625em;
+}
+.cs-fs-43{
+    font-size: 2.688em;
+}
+.cs-fs-44{
+    font-size: 2.75em;
+}
+.cs-fs-45{
+    font-size: 2.813em;
+}
+.cs-fs-46{
+    font-size: 2.875em;
+}
+.cs-fs-47{
+    font-size: 2.938em;
+}
+.cs-fs-48{
+    font-size: 3em;
+}
+.cs-fs-49{
+    font-size: 3.063em;
+}
+.cs-fs-50{
+    font-size: 3.125em;
+}
+.cs-fs-51{
+    font-size: 3.188em;
+}
+.cs-fs-52{
+    font-size: 3.25em;
+}
+.cs-fs-53{
+    font-size: 3.313em;
+}
+.cs-fs-54{
+    font-size: 3.375em;
+}
+.cs-fs-55{
+    font-size: 3.438em;
+}
+.cs-fs-56{
+    font-size: 3.5em;
+}
+.cs-fs-57{
+    font-size: 3.563em;
+}
+.cs-fs-58{
+    font-size: 3.625em;
+}
+.cs-fs-59{
+    font-size: 3.688em;
+}
+.cs-fs-60{
+    font-size: 3.75em;
+}
+
+/*-----------margin top---------*/
+.cs-mt-5{
+    margin-top: 5px;
+}
+.cs-mt-10{
+    margin-top: 10px;
+}
+.cs-mt-15{
+    margin-top: 15px;
+}
+.cs-mt-20{
+    margin-top: 20px;
+}
+.cs-mt-25{
+    margin-top:25px;
+}
+.cs-mt-30{
+    margin-top: 30px;
+}
+.cs-mt-35{
+    margin-top: 35px;
+}
+.cs-mt-40{
+    margin-top: 40px;
+}
+.cs-mt-45{
+    margin-top: 45px;
+}
+.cs-mt-50{
+    margin-top: 50px;
+}
+.cs-mat-55{
+    margin-top: 55px;
+}
+.cs-mt-60{
+    margin-top: 60px;
+}
+.cs-mt-65{
+    margin-top: 65px;
+}
+.cs-mt-70{
+    margin-top: 70px;
+}
+.cs-mt-75{
+    margin-top: 75px;
+}
+.cs-mt-80{
+    margin-top: 80px;
+}
+.cs-mt-85{
+    margin-top: 85px;
+}
+.cs-mt-90{
+    margin-top: 90px;
+}
+.cs-mt-95{
+    margin-top: 95px;
+}
+.cs-mt-100{
+    margin-top: 100px;
+}
+
+
+/*------ Margin Bottom ---------*/
+.cs-mb-5{
+    margin-bottom: 5px;
+}
+.cs-mb-10{
+    margin-bottom: 10px;
+}
+.cs-mb-15{
+    margin-bottom: 15px;
+}
+.cs-mb-20{
+    margin-bottom: 20px;
+}
+.cs-mb-25{
+    margin-bottom:25px;
+}
+.cs-mb-30{
+    margin-bottom: 30px;
+}
+.cs-mb-35{
+    margin-bottom: 35px;
+}
+.cs-mb-40{
+    margin-bottom: 40px;
+}
+.cs-mb-45{
+    margin-bottom: 45px;
+}
+.cs-mb-50{
+    margin-bottom: 50px;
+}
+.cs-mat-55{
+    margin-bottom: 55px;
+}
+.cs-mb-60{
+    margin-bottom: 60px;
+}
+.cs-mb-65{
+    margin-bottom: 65px;
+}
+.cs-mb-70{
+    margin-bottom: 70px;
+}
+.cs-mb-75{
+    margin-bottom: 75px;
+}
+.cs-mb-80{
+    margin-bottom: 80px;
+}
+.cs-mb-85{
+    margin-bottom: 85px;
+}
+.cs-mb-90{
+    margin-bottom: 90px;
+}
+.cs-mb-95{
+    margin-bottom: 95px;
+}
+.cs-mb-100{
+    margin-bottom: 100px;
+}
+
+
+/*------ Padding Top ---------*/
+.cs-pt-5{
+    margin-top: 5px;
+}
+.cs-pt-10{
+    margin-top: 10px;
+}
+.cs-pt-15{
+    margin-top: 15px;
+}
+.cs-pt-20{
+    margin-top: 20px;
+}
+.cs-pt-25{
+    margin-top:25px;
+}
+.cs-pt-30{
+    margin-top: 30px;
+}
+.cs-pt-35{
+    margin-top: 35px;
+}
+.cs-pt-40{
+    margin-top: 40px;
+}
+.cs-pt-45{
+    margin-top: 45px;
+}
+.cs-pt-50{
+    margin-top: 50px;
+}
+.cs-mat-55{
+    margin-top: 55px;
+}
+.cs-pt-60{
+    margin-top: 60px;
+}
+.cs-pt-65{
+    margin-top: 65px;
+}
+.cs-pt-70{
+    margin-top: 70px;
+}
+.cs-pt-75{
+    margin-top: 75px;
+}
+.cs-pt-80{
+    margin-top: 80px;
+}
+.cs-pt-85{
+    margin-top: 85px;
+}
+.cs-pt-90{
+    margin-top: 90px;
+}
+.cs-pt-95{
+    margin-top: 95px;
+}
+.cs-pt-100{
+    margin-top: 100px;
+}
+/*------ Padding bottom ---------*/
+.cs-pb-5{
+    margin-top: 5px;
+}
+.cs-pb-10{
+    margin-top: 10px;
+}
+.cs-pb-15{
+    margin-top: 15px;
+}
+.cs-pb-20{
+    margin-top: 20px;
+}
+.cs-pb-25{
+    margin-top:25px;
+}
+.cs-pb-30{
+    margin-top: 30px;
+}
+.cs-pb-35{
+    margin-top: 35px;
+}
+.cs-pb-40{
+    margin-top: 40px;
+}
+.cs-pb-45{
+    margin-top: 45px;
+}
+.cs-pb-50{
+    margin-top: 50px;
+}
+.cs-mat-55{
+    margin-top: 55px;
+}
+.cs-pb-60{
+    margin-top: 60px;
+}
+.cs-pb-65{
+    margin-top: 65px;
+}
+.cs-pb-70{
+    margin-top: 70px;
+}
+.cs-pb-75{
+    margin-top: 75px;
+}
+.cs-pb-80{
+    margin-top: 80px;
+}
+.cs-pb-85{
+    margin-top: 85px;
+}
+.cs-pb-90{
+    margin-top: 90px;
+}
+.cs-pb-95{
+    margin-top: 95px;
+}
+.cs-pb-100{
+    margin-top: 100px;
+}
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
