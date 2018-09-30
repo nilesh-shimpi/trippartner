@@ -8,6 +8,34 @@ public class HotelRequestBean {
     private Date checkOutDate;
     private Integer noOfAdults;
     private Integer noOfRooms;
+    private String hotelName;
+    private String roomType;
+    private Integer price;
+
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public String getHotelName() {
+        return hotelName;
+    }
+
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
+    }
+
+    public String getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
+    }
 
     public String getLocation() {
         return location;

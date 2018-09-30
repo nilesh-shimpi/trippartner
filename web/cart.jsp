@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.travelpartner.request.HotelRequestBean" %><%--
   Created by IntelliJ IDEA.
   User: Admin
   Date: 26-08-2018
@@ -100,7 +100,7 @@
     <link rel="alternate" type="text/xml+oembed" href="http://wp.swlabs.co/exploore/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwp.swlabs.co%2Fexploore%2Fcart%2F&#038;format=xml" />
     <!-- Start Dynamic Styling -->
     <style type="text/css">
-        @media screen {#wrapper-content .section.page-detail{}.homepage-banner-content .group-title .banner{font-size:px;}.homepage-banner-content .group-title .sub-banner{font-size:px;}body {background-color: #ffffff;background-repeat: no-repeat;background-attachment: ;background-position:center center;background-size:cover;}.page-title{background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/07/old-1130738_1920.jpg");}.page-title:before{content:"";position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color:rgba(52,73,94,0.23)}.page-title .page-title-wrapper .breadcrumb > li .link.home{color:#ffffff;font-weight:400;text-transform:uppercase;}.page-title .page-title-wrapper .breadcrumb > li .link{color:#ffffff;}.page-title .page-title-wrapper .breadcrumb > li .link{font-weight:400;text-transform:uppercase;}.page-title .page-title-wrapper .breadcrumb > li + li:before,.page-title .page-title-wrapper li.active .link:after{color:#ffffff;}.page-title-wrapper .breadcrumb li.active .link:after{background-color:#ffdd00;}.page-title .page-title-wrapper .breadcrumb{border-bottom:1px solid #ffdd00;}.page-title-wrapper .breadcrumb li.active .link:after{background-color:#ffdd00;}.page-title .page-title-wrapper .breadcrumb > li a{opacity: 0.8}.page-title .captions{color:#ffffff;font-weight:900;text-transform:uppercase;}#page-sidebar .widget{margin-bottom:50px}.footer-main-container {background-color: #292F32;background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/12/bg-footer.jpg");background-repeat: no-repeat;background-attachment: fixed;background-position:center center;background-size:cover;}.footer-main {background-color:rgba(0, 0, 0, 0);}.page-404{background-color: #ffffff;background-image: url("http://swlabs.co/exploore/assets/images/background/bg-section-404.jpg");background-repeat: no-repeat;background-attachment: ;background-position: center center;background-size:cover;}.page-register {background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotel-result.jpg");}.page-login {background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotel-result.jpg");}a{color:#555e69}a:hover{color:#ffdd00}a:active{color:#ffdd00}}</style> <!-- End Dynamic Styling -->
+        @media screen {#wrapper-content .section.page-detail{}.homepage-banner-content .group-title .banner{font-size:px;}.homepage-banner-content .group-title .sub-banner{font-size:px;}body {background-color: #ffffff;background-repeat: no-repeat;background-attachment: ;background-position:center center;background-size:cover;}.page-title{background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/07/old-1130738_1920.jpg");}.page-title:before{content:"";position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color:rgba(52,73,94,0.23)}.page-title .page-title-wrapper .breadcrumb > li .link.home{color:#ffffff;font-weight:400;text-transform:uppercase;}.page-title .page-title-wrapper .breadcrumb > li .link{color:#ffffff;}.page-title .page-title-wrapper .breadcrumb > li .link{font-weight:400;text-transform:uppercase;}.page-title .page-title-wrapper .breadcrumb > li + li:before,.page-title .page-title-wrapper li.active .link:after{color:#ffffff;}.page-title-wrapper .breadcrumb li.active .link:after{background-color:#ffdd00;}.page-title .page-title-wrapper .breadcrumb{border-bottom:1px solid #ffdd00;}.page-title-wrapper .breadcrumb li.active .link:after{background-color:#ffdd00;}.page-title .page-title-wrapper .breadcrumb > li a{opacity: 0.8}.page-title .captions{color:#ffffff;font-weight:900;text-transform:uppercase;}#page-sidebar .widget{margin-bottom:50px}.footer-main-container {background-color: #292F32;background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/12/bg-footer.jpg");background-repeat: no-repeat;background-attachment: fixed;background-position:center center;background-size:cover;}.footer-main {background-color:rgba(0, 0, 0, 0);}.page-404{background-color: #ffffff;background-image: url("http://swlabs.co/exploore/assets/images/background/bg-section-404.jpg");background-repeat: no-repeat;background-attachment: ;background-position: center center;background-size:cover;}.page-register {background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelRoomsInfo-result.jpg");}.page-login {background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelRoomsInfo-result.jpg");}a{color:#555e69}a:hover{color:#ffdd00}a:active{color:#ffdd00}}</style> <!-- End Dynamic Styling -->
     <!-- Start Dynamic Styling only for desktop -->
     <style type="text/css">
         @media screen and (min-width: 767px) {.page-title{background-color: #f3f3f3;background-image: url("http://wp.swlabs.co/exploore/wp-content/uploads/2016/07/old-1130738_1920.jpg");background-repeat: no-repeat;background-attachment: fixed;background-position:center center;background-size:cover;text-align:left;}.page-title{height:540px;}.page-title .page-title-wrapper .breadcrumb > li .link.home{font-size:20px;}.page-title .page-title-wrapper .breadcrumb > li .link{font-size:12px;}.page-title .page-title-wrapper .breadcrumb > li,.page-title .page-title-wrapper .breadcrumb > li a,.page-title .page-title-wrapper .breadcrumb > li.active{font-size:20px;}.page-title .captions{font-size:;}}</style> <!-- End Dynamic Styling only for desktop -->
@@ -185,15 +185,15 @@
                         <li id="menu-item-2782" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_tour menu-item-2782" ><a class="link-page"  href="http://wp.swlabs.co/exploore/tours/paris-city/"><i class="fa  "></i>Book Tour With Contact Form<span class="label label-success">New</span></a></li>
                         <li id="menu-item-2943" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_tour menu-item-2943" ><a class="link-page"  href="http://wp.swlabs.co/exploore/tours/new-york-city/"><i class="fa  "></i>Booking Tour Or Book With Contact Form<span class="label label-success">New</span></a></li>
                     </ul></li>
-                    <li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-554 dropdown menu-item-depth1" ><a class="main-menu"  href="http://wp.swlabs.co/exploore/hotels-list/"><i class="fa  "></i>Hotels<span class="label label-danger">New</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a><ul class="dropdown-menu dropdown-menu-1 exploore-dropdown-menu-1">	<li id="menu-item-535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-535" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations"><i class="fa  "></i>Hotels Search</a></li>
-                        <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotels-list/"><i class="fa  "></i>Hotels List  Layout 01</a></li>
-                        <li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1639" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotel-list-02/"><i class="fa  "></i>Hotels List Layout 02</a></li>
-                        <li id="menu-item-3813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3813" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotel-grid/"><i class="fa  "></i>Hotel Grid<span class="label label-danger">New</span></a></li>
-                        <li id="menu-item-1686" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-1686" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotel/"><i class="fa  "></i>Hotel View</a></li>
-                        <li id="menu-item-2331" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2331" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/edemil-hotel/"><i class="fa  "></i>Hotel View &#038; Deposit mode</a></li>
-                        <li id="menu-item-2740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2740" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotels-map/"><i class="fa  "></i>Hotels Map<span class="label label-danger">New</span></a></li>
-                        <li id="menu-item-2788" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2788" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/sarina-hotel/"><i class="fa  "></i>Book Hotel With Contact Form<span class="label label-success">New</span></a></li>
-                        <li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2945" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/matel-hotel/"><i class="fa  "></i>Booking Hotel Or Book With Contact Form<span class="label label-success">New</span></a></li>
+                    <li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-554 dropdown menu-item-depth1" ><a class="main-menu"  href="http://wp.swlabs.co/exploore/hotelRoomsInfos-list/"><i class="fa  "></i>Hotels<span class="label label-danger">New</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a><ul class="dropdown-menu dropdown-menu-1 exploore-dropdown-menu-1">	<li id="menu-item-535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-535" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations"><i class="fa  "></i>Hotels Search</a></li>
+                        <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotelRoomsInfos-list/"><i class="fa  "></i>Hotels List  Layout 01</a></li>
+                        <li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1639" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotelRoomsInfo-list-02/"><i class="fa  "></i>Hotels List Layout 02</a></li>
+                        <li id="menu-item-3813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3813" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotelRoomsInfo-grid/"><i class="fa  "></i>Hotel Grid<span class="label label-danger">New</span></a></li>
+                        <li id="menu-item-1686" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-1686" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotelRoomsInfo/"><i class="fa  "></i>Hotel View</a></li>
+                        <li id="menu-item-2331" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2331" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/edemil-hotelRoomsInfo/"><i class="fa  "></i>Hotel View &#038; Deposit mode</a></li>
+                        <li id="menu-item-2740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2740" ><a class="link-page"  href="http://wp.swlabs.co/exploore/hotelRoomsInfos-map/"><i class="fa  "></i>Hotels Map<span class="label label-danger">New</span></a></li>
+                        <li id="menu-item-2788" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2788" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/sarina-hotelRoomsInfo/"><i class="fa  "></i>Book Hotel With Contact Form<span class="label label-success">New</span></a></li>
+                        <li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-slzexploore_hotel menu-item-2945" ><a class="link-page"  href="http://wp.swlabs.co/exploore/accommodations/matel-hotelRoomsInfo/"><i class="fa  "></i>Booking Hotel Or Book With Contact Form<span class="label label-success">New</span></a></li>
                     </ul></li>
                     <li id="menu-item-1342" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1342 dropdown menu-item-depth1" ><a class="main-menu"  href="#"><i class="fa  "></i>Services<span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a><ul class="dropdown-menu dropdown-menu-1 exploore-dropdown-menu-1">	<li id="menu-item-2741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2741 dropdown " ><a class="link-page"  href="http://wp.swlabs.co/exploore/car-list/"><span class="fa fa-angle-right icons-dropdown"></span><i class="fa  "></i>Car Rents</a>	<ul class="dropdown-menu dropdown-menu-2 exploore-dropdown-menu-2 left">		<li id="menu-item-778" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778" ><a class="link-page"  href="http://wp.swlabs.co/exploore/car_rent/"><i class="fa  "></i>Car Rent  Search</a></li>
                         <li id="menu-item-881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-881" ><a class="link-page"  href="http://wp.swlabs.co/exploore/car-list/"><i class="fa  "></i>Car  Rent List</a></li>
@@ -231,7 +231,7 @@
                         <li id="menu-item-981"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/tour-schedule/"><span class="text"><i class="fa   fa-calendar menu-icon"></i>Tour Schedule</span></a></li>
                         <li id="menu-item-992"><a class="link-page"  href="http://wp.swlabs.co/exploore/room-types/"><span class="text"><i class="fa  fa-home menu-icon"></i>Room Types</span></a></li>
                     </ul></li></ul></div>
-                        <div class="mega-menu-column col-md-3"><ul class="mega-menu-column-box">	<li id="menu-item-1157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1157 mega-menu-title sub-menu " ><a href="javascript:void(0)" class="sf-with-ul"><i class="fa  "></i><span>Sample 02</span></a>	<ul class="dropdown-menu dropdown-menu-1">		<li id="menu-item-1004"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/hotel-shortcodes/"><span class="text"><i class="fa  fa-home menu-icon"></i>Hotel Shortcodes</span></a></li>
+                        <div class="mega-menu-column col-md-3"><ul class="mega-menu-column-box">	<li id="menu-item-1157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1157 mega-menu-title sub-menu " ><a href="javascript:void(0)" class="sf-with-ul"><i class="fa  "></i><span>Sample 02</span></a>	<ul class="dropdown-menu dropdown-menu-1">		<li id="menu-item-1004"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/hotelRoomsInfo-shortcodes/"><span class="text"><i class="fa  fa-home menu-icon"></i>Hotel Shortcodes</span></a></li>
                             <li id="menu-item-1306"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/team-carousel/"><span class="text"><i class="fa  fa-group menu-icon"></i>Team Carousel</span></a></li>
                             <li id="menu-item-1280"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/team-single-list/"><span class="text"><i class="fa  fa-child menu-icon"></i>Team Single &#038; List</span></a></li>
                             <li id="menu-item-1080"><a class="link-page"  href="http://wp.swlabs.co/exploore/shortcode/partner/"><span class="text"><i class="fa  fa-users menu-icon"></i>Partner</span></a></li>
@@ -278,25 +278,14 @@
                         </ul></div></div></li></ul></div>
                     </li></ul></div></li>
                 </ul>					</div>
-            <ul class="topbar-right pull-right list-unstyled list-inline login-widget">
-                <li><a href="http://wp.swlabs.co/exploore/?d=rtl" class="monney dropdown-text"><span>Switch to RTL</span></a></li>
-                <li><a href="http://wp.swlabs.co/exploore/shop/login/" class="item">Login</a></li>
-                <li><a href="http://wp.swlabs.co/exploore/shop/register/" class="item">Register</a></li></ul>				</div>
+         		</div>
     </div>
     <!-- WRAPPER CONTENT-->
     <div class="wrapper-content">
         <!-- HEADER-->
         <header>
             <div class="bg-transparent homepage-05">
-                <div class="header-topbar">
-                    <div class="container">
-                        <ul class="topbar-left list-unstyled list-inline pull-left">
-                            <li><a href="javascript:void(0)" class="monney dropdown-text"><i class="topbar-icon fa fa fa-phone "></i><span> +84 909 015 345</span></a>
-                            </li><li><a href="http://facebook.com" class="link  facebook" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="https://plus.google.com/" class="link  google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li><li><a href="http://twitter.com" class="link  twitter" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://instagram.com" class="link  instagram" target="_blank"><i class="fa fa-instagram"></i></a></li></ul><ul class="topbar-right pull-right list-unstyled list-inline login-widget">
-                        <li><a href="http://wp.swlabs.co/exploore/?d=rtl" class="monney dropdown-text"><span>Switch to RTL</span></a></li>
-                        <li><a href="http://wp.swlabs.co/exploore/shop/login/" class="item">Login</a></li>
-                        <li><a href="http://wp.swlabs.co/exploore/shop/register/" class="item">Register</a></li></ul>			</div>
-                </div>
+
                 <div class="header-main">
                     <div class="container">
                         <div class="header-main-wrapper">
@@ -370,10 +359,13 @@
                                                                     <img width="150" height="150" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="316_langham_modern_Exterior" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-200x200.jpg 200w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" />					</td>
 
                                                                 <td class="product-name" data-title="Product">
-                                                                    <a href="http://wp.swlabs.co/exploore/accommodations/turhal-hotel/">Turhal Hotel</a><br/>Room Type: General Room<br/>Number room: 1<br/>Check in date: August 26, 2018<br/>Check out date: August 26, 2018<br/>Adults: 1<br/>&nbsp;					</td>
+                                                                    <%HotelRequestBean hotelRequestBean = (HotelRequestBean) application.getAttribute("hotelBookRequest");%>
+
+                                                                    <a href="http://wp.swlabs.co/exploore/accommodations/turhal-hotelRoomsInfo/">
+                                                                        <%=hotelRequestBean.getHotelName()%></a><br/>Room Type : <%=hotelRequestBean.getRoomType()%><br/><br/>Check in date: <%=hotelRequestBean.getCheckInDate()%><br/>Check out date: <%=hotelRequestBean.getCheckOutDate()%><br/>Adults: <%=hotelRequestBean.getNoOfAdults()%><br/>&nbsp;					</td>
 
                                                                 <td class="product-price" data-title="Price">
-                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>30.00</span>					</td>
+                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span><%=hotelRequestBean.getPrice()%></span>					</td>
 
                                                                 <td class="product-quantity" data-title="Quantity">
                                                                     <div class="quantity">
@@ -382,14 +374,13 @@
                                                                 </td>
 
                                                                 <td class="product-subtotal" data-title="Total">
-                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>30.00</span>					</td>
+                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span><%=hotelRequestBean.getPrice()%></span>					</td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="6" class="actions">
 
 
 
-                                                                    <input type="submit" class="button" name="update_cart" value="Update Cart" />
 
 
                                                                     <input type="hidden" id="_wpnonce" name="_wpnonce" value="21cbe5b939" /><input type="hidden" name="_wp_http_referer" value="/exploore/cart/" />			</td>
@@ -412,7 +403,7 @@
 
                                                                 <tr class="cart-subtotal">
                                                                     <th>Subtotal</th>
-                                                                    <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>30.00</span></td>
+                                                                    <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span><%=hotelRequestBean.getPrice()%></span></td>
                                                                 </tr>
 
 
@@ -422,7 +413,7 @@
 
                                                                 <tr class="order-total">
                                                                     <th>Total</th>
-                                                                    <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>30.00</span></strong> </td>
+                                                                    <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span><%=hotelRequestBean.getPrice()%></span></strong> </td>
                                                                 </tr>
 
 
@@ -462,46 +453,7 @@
     <!-- WRAPPER CONTENT -->
     <!-- FOOTER-->
     <footer>
-        <div class="subscribe-email">
-            <div class="container">
-                <div class="subscribe-email-wrapper">
-                    <div class="subscribe-email-left">
-                        <p class="subscribe-email-title">Subscribe <span class="logo-text">Exploore</span> to get latest offers and deals today</p>
-                        <p class="subscribe-email-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    </div>
-                    <div class="subscribe-email-right">
 
-
-                        <script type="text/javascript">
-                            //<![CDATA[
-                            if (typeof newsletter_check !== "function") {
-                                window.newsletter_check = function (f) {
-                                    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
-                                    if (!re.test(f.elements["ne"].value)) {
-                                        alert("The email is not correct");
-                                        return false;
-                                    }
-                                    for (var i=1; i<20; i++) {
-                                        if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
-                                            alert("");
-                                            return false;
-                                        }
-                                    }
-                                    if (f.elements["ny"] && !f.elements["ny"].checked) {
-                                        alert("You must accept the privacy statement");
-                                        return false;
-                                    }
-                                    return true;
-                                }
-                            }
-                            //]]>
-                        </script>
-
-                        <form action="http://wp.swlabs.co/exploore/?na=s" onsubmit="return newsletter_check(this)" method="post"><div class="input-group form-subscribe-email"><input type="hidden" name="nr" value="widget"/><input class="form-control" type="email" required name="ne" placeholder="Write your email" onclick="if (this.defaultValue==this.value) this.value=''" onblur="if (this.value=='') this.value=this.defaultValue"/><span class="input-group-btn-custom"><button type="submit" class="btn-email">&#8594;</button></span></div></form>					            </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
         <div class="footer-main-container">
             <div class="footer-main padding-top padding-bottom ">
                 <div class="container">
@@ -549,7 +501,7 @@
                                     <form action="http://wp.swlabs.co/exploore/?na=s" onsubmit="return newsletter_check(this)" method="post"><div class="input-group"><input type="hidden" name="nr" value="widget"/><input class="form-control form-email-widget" type="email" required name="ne" placeholder="Email address" onclick="if (this.defaultValue==this.value) this.value=''" onblur="if (this.value=='') this.value=this.defaultValue"/><span class="input-group-btn-custom"><button type="submit" class="btn-email">&#10004;</button></span></div></form></div></div>								</div>
                                 <div id="footer_c2" class="footer-area col-md-2 col-xs-3">
                                     <div id="slzexploore_custom_link-1" class="widget_slz_widget_custom_link slz-widget widget widget-footer">			<div class="booking-widget widget text-center"><div class="title-widget">Book Now</div>				<div class="content-widget">					<ul class="list-unstyled">
-                                        <li><a href="http://wp.swlabs.co/exploore/" class="link">Flight</a></li><li><a href="http://wp.swlabs.co/exploore/shop/tours-list/" class="link">Tours</a></li><li><a href="http://wp.swlabs.co/exploore/hotels-list/" class="link">Packages</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Transfer</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Car Rent</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Cruises</a></li>					</ul>				</div>
+                                        <li><a href="http://wp.swlabs.co/exploore/" class="link">Flight</a></li><li><a href="http://wp.swlabs.co/exploore/shop/tours-list/" class="link">Tours</a></li><li><a href="http://wp.swlabs.co/exploore/hotelRoomsInfos-list/" class="link">Packages</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Transfer</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Car Rent</a></li><li><a href="http://wp.swlabs.co/exploore/" class="link">Cruises</a></li>					</ul>				</div>
                                     </div>
                                     </div>								</div>
                                 <div id="footer_c3" class="footer-area col-md-2 col-xs-4">
@@ -566,7 +518,7 @@
                                     <div id="slzexploore_accommodation-2" class="widget_slz_widget_accommodation slz-widget widget widget-footer">			<div class="explore-widget widget">
                                         <div class="title-widget">Top Deals</div>				<div class="content-widget">
                                         <ul class="list-unstyled">
-                                            <li><a href="http://wp.swlabs.co/exploore/accommodations/edemil-hotel/" class="link">Edemil Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/turhal-hotel/" class="link">Turhal Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotel/" class="link">Kadirly Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/sarina-hotel/" class="link">Sarina Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/amasya-hotel/" class="link">Amasya Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/matel-hotel/" class="link">Matel Hotel</a></li>					</ul>
+                                            <li><a href="http://wp.swlabs.co/exploore/accommodations/edemil-hotelRoomsInfo/" class="link">Edemil Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/turhal-hotelRoomsInfo/" class="link">Turhal Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotelRoomsInfo/" class="link">Kadirly Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/sarina-hotelRoomsInfo/" class="link">Sarina Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/amasya-hotelRoomsInfo/" class="link">Amasya Hotel</a></li><li><a href="http://wp.swlabs.co/exploore/accommodations/matel-hotelRoomsInfo/" class="link">Matel Hotel</a></li>					</ul>
                                     </div>
                                     </div>
                                     </div>								</div>
@@ -574,7 +526,7 @@
                                     <div id="slzexploore_gallery-1" class="widget_slzexploore_gallery slz-widget widget widget-footer"><div class="title-widget">Destinations</div>			<div class="destination-widget widget">
                                         <div class="content-widget ">
                                             <ul class="list-unstyled list-inline">
-                                                <li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/edemil-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-100x100.jpg" class="img-responsive" alt="hotelbeauti" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/turhal-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-100x100.jpg" class="img-responsive" alt="316_langham_modern_Exterior" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-100x100.jpg" class="img-responsive" alt="280821" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/sarina-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-100x100.jpg" class="img-responsive" alt="hanoi-top-luxury-hotel" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotel-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/amasya-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-100x100.jpg" class="img-responsive" alt="inntel-zaandam-bigheader1" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/matel-hotel/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-100x100.jpg" class="img-responsive" alt="Palais-Namaskar-luxury-dream-hotels-01" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotels-01-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li>					</ul>
+                                                <li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/edemil-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-100x100.jpg" class="img-responsive" alt="hotelbeauti" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hotelbeauti-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/turhal-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-100x100.jpg" class="img-responsive" alt="316_langham_modern_Exterior" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/316_langham_modern_Exterior-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/kadirly-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-100x100.jpg" class="img-responsive" alt="280821" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/280821-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/sarina-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-100x100.jpg" class="img-responsive" alt="hanoi-top-luxury-hotelRoomsInfo" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/hanoi-top-luxury-hotelRoomsInfo-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/amasya-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-100x100.jpg" class="img-responsive" alt="inntel-zaandam-bigheader1" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/inntel-zaandam-bigheader1-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li><li><a class="thumb" href="http://wp.swlabs.co/exploore/accommodations/matel-hotelRoomsInfo/"><img width="100" height="100" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-100x100.jpg" class="img-responsive" alt="Palais-Namaskar-luxury-dream-hotelRoomsInfos-01" srcset="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-100x100.jpg 100w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-150x150.jpg 150w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-180x180.jpg 180w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-300x300.jpg 300w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-600x600.jpg 600w, http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/Palais-Namaskar-luxury-dream-hotelRoomsInfos-01-200x200.jpg 200w" sizes="(max-width: 100px) 100vw, 100px" /></a></li>					</ul>
                                         </div>
                                     </div>
                                     </div>								</div>
@@ -584,60 +536,7 @@
                 </div>
             </div>
         </div>
-        <div class="hyperlink ">
-            <div class="container">
-                <div class="slz-shortcode slide-logo-wrapper ">
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-02.png" class="img-responsive" alt="logo-02" />
-                        </a>
-                    </div>
 
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-01.png" class="img-responsive" alt="logo-01" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-06.png" class="img-responsive" alt="logo-06" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-05.png" class="img-responsive" alt="logo-05" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-04.png" class="img-responsive" alt="logo-04" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-03.png" class="img-responsive" alt="logo-03" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-02.png" class="img-responsive" alt="logo-02" />
-                        </a>
-                    </div>
-
-                    <div class="logo-item">
-                        <a href="" class="link">
-                            <img width="110" height="90" src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/logo-01.png" class="img-responsive" alt="logo-01" />
-                        </a>
-                    </div>
-                </div>
-                <div class="social-footer"><ul class="list-inline list-unstyled"><li><a href="http://facebook.com" class="link facebook" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="https://plus.google.com/" class="link google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li><li><a href="http://twitter.com" class="link twitter" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://instagram.com" class="link instagram" target="_blank"><i class="fa fa-instagram"></i></a></li><li><a href="http://dribbble.com" class="link dribbble" target="_blank"><i class="fa fa-dribbble"></i></a></li><li><a href="https://pinterest.com/" class="link pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li></ul></div>				<div class="name-company"><span>© Designed by SWLABS.</span></div>
-            </div>
-        </div>
     </footer>
 </div>
 <div class="slz-button-hove-text hide" data-text="SEND NOW"></div>
@@ -646,96 +545,7 @@
 <div class="hidden-sm hidden-xs" id="theme-setting">
 
     <a aria-expanded="true" href="#" data-toggle="dropdown" class="btn-theme-setting"><i class="fa fa-cogs"></i></a>
-    <div class="purchase-wrap">
-        <a href="http://bit.ly/tf_exploore" class="purchase-btn" target="_blank">Purchase now</a>
-    </div>
-    <div class="theme-setting-content">
-        <div class="layout-options skin-site" data-url='http://wp.swlabs.co/exploore/wp-content/themes/exploore/assets/public/css/skin/'>
-            <h6 class="switcher-title prn">Skin color</h6>
-            <ul class="list-unstyled list-inline">
-                <li><a href="#" data-color="color-1" class="active"></a></li>
-                <li><a href="#" data-color="color-2"></a></li>
-                <li><a href="#" data-color="color-3"></a></li>
-                <li><a href="#" data-color="color-4"></a></li>
-                <li><a href="#" data-color="color-5"></a></li>
-                <li><a href="#" data-color="color-6"></a></li>
-                <li><a href="#" data-color="color-7"></a></li>
-                <li><a href="#" data-color="color-8"></a></li>
-                <li><a href="#" data-color="color-9"></a></li>
-                <li><a href="#" data-color="color-10"></a></li>
-            </ul>
-        </div>
-        <form action="" id="header-options-form" method="get">
-            <div class="layout-options">
-                <h6 class="switcher-title prn">Header Options</h6>
-                <select id="header-options" class="form-control" name="h" data-header="one">
-                    <option value="one">Header 01</option>
-                    <option value="two">Header 02</option>
-                    <option value="three">Header 03</option>
-                    <option value="four">Header 04</option>
-                    <option value="five">Header 05</option>
-                </select>
-            </div>
-            <div class="layout-options">
-                <h6 class="switcher-title prn">Footer Options</h6>
-                <select id="footer-options" class="form-control" name="f" data-footer="dark">
-                    <option value="dark">Footer Dark</option>
-                    <option value="light">Footer Light</option>
-                </select>
-            </div>
-        </form>
-        <div class="layout-options">
-            <h6 class="switcher-title prn">Layout Options</h6>
-            <p>
-                <a id="layout-wide" href="#" class="btn btn-default active">Wide</a>&nbsp;&nbsp;<a id="layout-boxed" href="#" class="btn btn-default hidden-md">Boxed</a>
-            </p>
-        </div>
-        <div class="layout-options">
-            <div class="boxed-background-patterns">
-                <h6 class="switcher-title prn">Layout patterns</h6>
-                <ul class="list-unstyled list-inline">
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-11.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-16.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-91.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-52.png" alt="" class="img-responsive"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="layout-options boxed-option">
-            <div class="boxed-background-patterns">
-                <h6 class="switcher-title prn">Boxed layout patterns</h6>
-                <ul class="list-unstyled list-inline">
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-71.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-181.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-31.png" alt="" class="img-responsive"></a></li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-41.png" alt="" class="img-responsive"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="layout-options boxed-option">
-            <div class="boxed-background-images">
-                <h6 class="switcher-title prn">Boxed layout images</h6>
-                <ul class="list-unstyled list-inline">
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-02.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-03.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-04.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-05.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-06.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-07.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-08.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                    <li><a href="#"><img src="http://wp.swlabs.co/exploore/wp-content/uploads/bg/boxed-bg-img-9.jpg" alt="" class="img-responsive"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 </div>		<script type='text/javascript' src='http://wp.swlabs.co/exploore/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */

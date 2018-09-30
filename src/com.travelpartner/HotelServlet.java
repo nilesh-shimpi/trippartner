@@ -1,10 +1,8 @@
 package com.travelpartner;
 
 import com.travelpartner.dao.bean.*;
-import com.travelpartner.dao.bean.TravelPlaces;
 import com.travelpartner.dao.impl.HotelDaoImpl;
 import com.travelpartner.dao.impl.HotelDetailsDaoImpl;
-import com.travelpartner.dao.impl.TravelPlaceDaoImpl;
 import com.travelpartner.request.HotelRequestBean;
 
 import javax.servlet.RequestDispatcher;
@@ -14,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -48,32 +45,37 @@ public class HotelServlet extends HttpServlet {
             String noOfAdults = (String) request.getParameter("Adults");
             Integer noOfAdult = Integer.parseInt(noOfAdults);
             String noOfRoom = (String) request.getParameter("Room");
-            Integer noOfRooms = Integer.parseInt(noOfRoom);
+            HotelRequestBean hotelRequestBean = new HotelRequestBean();
+            if (noOfRoom != null && noOfRoom.equals("")) {
+                Integer noOfRooms = Integer.parseInt(noOfRoom);
+                hotelRequestBean.setNoOfRooms(noOfRooms);
+            }
+
             String hotelName = (String)request.getParameter("hotelName");
 
-            HotelRequestBean hotelRequestBean = new HotelRequestBean();
+            hotelRequestBean.setHotelName(hotelName);
             hotelRequestBean.setLocation(location);
             hotelRequestBean.setCheckInDate(new SimpleDateFormat("yyyy-mm-dd").parse(checkInDate));
             hotelRequestBean.setCheckOutDate(new SimpleDateFormat("yyyy-mm-dd").parse(checkOutDate));
             hotelRequestBean.setNoOfAdults(noOfAdult);
-            hotelRequestBean.setNoOfRooms(noOfRooms);
+
 
             HotelDetailsDaoImpl hotelDetailsDao = new HotelDetailsDaoImpl();
             List<HotelDetails> hotelDetailList = hotelDetailsDao.searchHotelDetails(location, new SimpleDateFormat("yyyy-mm-dd").parse(checkInDate), hotelName);
-            List<Hotel> hotelsList = new ArrayList<>();
+            List<HotelRoomsInfo> hotelsList = new ArrayList<>();
             HotelDaoImpl hotelDao = new HotelDaoImpl();
-            Map<String, List<Hotel>> map = new LinkedHashMap<>();
+            Map<String, List<HotelRoomsInfo>> map = new LinkedHashMap<>();
             for (HotelDetails hotelDetails : hotelDetailList) {
-                List<Hotel> hotels = hotelDao.searchHotel(hotelDetails.getLocation(), hotelDetails.getHotelName());
-                if (hotels != null) {
+                List<HotelRoomsInfo> hotelRoomsInfos = hotelDao.searchHotel(hotelDetails.getLocation(), hotelDetails.getHotelName());
+                if (hotelRoomsInfos != null) {
                     if (map.get(hotelDetails.getHotelName()) == null) {
-                        map.put(hotelDetails.getHotelName(), hotels);
+                        map.put(hotelDetails.getHotelName(), hotelRoomsInfos);
                     } else {
-                        List<Hotel> alreadyAdded = map.get(hotelDetails.getHotelName());
-                        alreadyAdded.addAll(hotels);
+                        List<HotelRoomsInfo> alreadyAdded = map.get(hotelDetails.getHotelName());
+                        alreadyAdded.addAll(hotelRoomsInfos);
                         map.put(hotelDetails.getHotelName(), alreadyAdded);
                     }
-                    hotelsList.addAll(hotels);
+                    hotelsList.addAll(hotelRoomsInfos);
                 }
             }
             request.setAttribute("hotelList", map);

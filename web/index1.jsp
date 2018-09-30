@@ -143,7 +143,7 @@ C A R O U S E L
                 <p>
                     Trippartner compares rates from top booking sites like
                     MakeMyTrip, Yatra and Cleartrip to help you find the lowest
-                    hotel prices.
+                    hotelRoomsInfo prices.
                 </p>
             </div>
             <div class="col-4">
@@ -482,7 +482,7 @@ C A R O U S E L
                 <p>
                     Trippartner compares rates from top booking sites like
                     MakeMyTrip, Yatra and Cleartrip to help you find the lowest
-                    hotel prices.
+                    hotelRoomsInfo prices.
                 </p>
             </div>
             <div class="col-4">

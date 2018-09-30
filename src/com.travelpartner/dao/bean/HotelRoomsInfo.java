@@ -1,6 +1,6 @@
 package com.travelpartner.dao.bean;
 
-public class Hotel {
+public class HotelRoomsInfo {
 
     private Integer id;
     private String name;
@@ -9,6 +9,9 @@ public class Hotel {
     private String roomType;
     private Integer price;
     private String location;
+
+
+
 
     public Integer getId() {
         return id;
